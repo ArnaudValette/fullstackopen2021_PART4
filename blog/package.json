@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"no test file specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "author": "VA",
   "license": "MIT",
@@ -18,6 +18,10 @@
   },
   "devDependencies": {
     "eslint": "^8.2.0",
+    "jest": "^27.3.1",
     "nodemon": "^2.0.14"
+  },
+  "jest": {
+    "testEnvironment" : "node"
   }
 }
